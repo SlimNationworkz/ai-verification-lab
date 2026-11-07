@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "function": "unique_usernames",
+  "cases": [
+    {"id": "basic", "args": [["Alice", "Bob"]], "expected": ["Alice", "Bob"]},
+    {"id": "trim", "args": [[" Alice ", " Bob  "]], "expected": ["Alice", "Bob"]},
+    {"id": "case_insensitive", "args": [["Alice", "alice", "ALICE"]], "expected": ["Alice"]},
+    {"id": "blank_entries", "args": [[" ", "Bob", "  "]], "expected": ["Bob"]},
+    {"id": "preserve_first_spelling", "args": [[" aLiCe ", "alice", "ALICE", " bob ", "BOB"]], "expected": ["aLiCe", "bob"]},
+    {"id": "empty_input", "args": [[]], "expected": []},
+    {"id": "mixed", "args": [["", "Ann", " ann ", "Carl", "CARL", "   ", "Deb"]], "expected": ["Ann", "Carl", "Deb"]}
+  ]
+}

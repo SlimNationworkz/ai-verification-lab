@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "candidate_sha256": "eb81d611358632fddaf3c8b2e333e0fd1a536ef0ebf82facff67e66533b808b4",
+  "spec_sha256": "fb680c2c7dad030d2f281fd636d9c74d570524d2eaa93fb7e1fd9edfea31b72d",
+  "function": "unique_usernames",
+  "verdict": "PASS",
+  "passed": 7,
+  "total": 7,
+  "cases": [
+    {
+      "id": "basic",
+      "status": "PASS"
+    },
+    {
+      "id": "trim",
+      "status": "PASS"
+    },
+    {
+      "id": "case_insensitive",
+      "status": "PASS"
+    },
+    {
+      "id": "blank_entries",
+      "status": "PASS"
+    },
+    {
+      "id": "preserve_first_spelling",
+      "status": "PASS"
+    },
+    {
+      "id": "empty_input",
+      "status": "PASS"
+    },
+    {
+      "id": "mixed",
+      "status": "PASS"
+    }
+  ]
+}
